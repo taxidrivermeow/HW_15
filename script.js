@@ -41,7 +41,7 @@ function arrayCopy(src, srcPos, dst, dstPos, length) {
 }
 
 function count(array, str) {
-    return array.reduce(function (resArr = 0, value, index) {
+    return array.reduce(function (resArr, value, index) {
         if (value === str) resArr++;
         return resArr;
     }, 0);
